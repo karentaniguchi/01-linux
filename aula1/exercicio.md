@@ -21,4 +21,4 @@
 
 ### Exercício para Aula (programação BASH)
 
-* Monte um laço que gera 10 números aleatórios. Imprima na tela se o número gerado é menor que 1000 ou maior que 1000
+* Monte um laço que gera 10 números aleatórios (Use comando seq e variavel $RANDOM). Imprima na tela se o número gerado é menor que 1000 ou maior que 1000
