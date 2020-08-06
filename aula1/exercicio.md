@@ -18,3 +18,7 @@
 * Faça um script que classifica por ordem alfabetica decrescente as cidades por nome e salva em um arquivo chamado arq1
 * Faça um script que selecione as cidades na posição 12 e 13 por ordem crescente e coloca em em um arquivo chamado arq2
 * Faça um script que copia os arquivos arq1 e arq2 para /tmp e depois os apaga
+
+### Exercício para Aula (programação BASH)
+
+* Monte um laço que gera 10 números aleatórios. Imprima na tela se o número gerado é menor que 1000 ou maior que 1000
