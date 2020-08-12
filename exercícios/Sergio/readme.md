@@ -1,6 +1,6 @@
 ******EXERCÍCIOS BASH******
 
-Os exercícios 1 à 8 foram resolvidos de acordo com o proposto.
+Os exercícios 1 à 8 e 10 foram resolvidos de acordo com o proposto.
 Os exercícios seguintes, 9 e 11 estão incompletos.
 
 Problemas encontrados durante a resolução dos exercícios:
