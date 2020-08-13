@@ -7,7 +7,7 @@ if [ $var1 == $var2 ] ; then
 else
 	cmp variavel1.txt variavel2.txt > byte.txt
 	echo "A similaridade entre as duas palavras é:"
-	awk '{ print substr($0,53,1)-1 }' byte.txt
+	awk '{ print substr($0,53,2)-1 }' byte.txt
 fi
 d=$(diff <(echo "$1" |sed 's/./&\n/g') <(echo "$2" |sed 's/./&\n/g') |grep -c '^[<>]')
 echo "As palavras são $((100-100*d/(${#1}+${#2})))% iguais"
