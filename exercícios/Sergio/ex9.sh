@@ -5,12 +5,16 @@ d="$1"
 num_linhas=`sort algo | wc -l`
 
 #Para i de 1 até o valor de entrada
-for i in `seq 1 1 $d` ; do
-        echo "$i"
-        #Erro de sintaxe na utilização do comando Sed
-        mediana=`sort algo | head -n "$d" | tail -n +"$i" | sed -n $((i/2 + i%2)),$((i/2 + i%2))d  | bc`
-        echo "$mediana"
-        #if [ $((mediana ** 2)) -gt 10 ] ; then
-        #       echo "ALERTA"
-        #fi
+for i in `seq 1 1 $((num_linhas - d))` ; do
+        #ordena os dados, seleciona os D primeiros, dentre estes os i ultimos, e seleciona apenas o número do meio
+        mediana=`sort algo | head -n $d | tail -n +$i | sed -n $((d/2))d  | bc`
+        #ordena os dados, seleciona entre o total - atual ultimos, os d+1 primeiros, e pega o ultimo valor
+        ultimo=`sort algo | tail -n $((num_linhas-i)) | head -n $((d+1)) | tail -n 1`
+
+        #multiplica por 2 a mediana
+        mediana=$((mediana*2))
+        if [ $ultimo -gt $mediana ] ; then
+                echo "ALERTA"
+        fi
 done
+
