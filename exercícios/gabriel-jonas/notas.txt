@@ -1,0 +1,1 @@
+Consegui fazer todos os exercicios menos o 11. Não consegui pensar em uma forma de organizar os arquivos para fazer a leitura e escrita de uma forma para fazer buscar seletivas neles.
