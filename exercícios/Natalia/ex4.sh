@@ -1,0 +1,5 @@
+echo "A soma dos dois números é $(($1+$2))" 
+echo "A diferença dos dois números é $(($1-$2))"
+echo "O produto dos dois números é $(($1*$2))"
+echo "O quociente dos dois números é $(($1/$2))"
+echo "O resto da divisão dos dois números é $(($1%$2))"
